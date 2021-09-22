@@ -3,7 +3,9 @@
 Existing GPGPU benchmark suites used by academics have a bottom-up approach by focusing on essential computational kernels and algorithm implementations. Cactus, on the other hand, focuses on a top-down approach by using modern GPGPU applications in HPC domain where multiple kernels and algorithms are used in order to run an application. More information about the phylosophy of Cactus and its methodolog is described in the following paper:
 
 ```
-Mahmood Naderan-Tahan and Lieven Eeckhout, "Cactus: Top-Down GPU-Compute Benchmarking using Real-Life Applications", IEEE International Symposium on Workload Characterization (IISWC), 2021.
+Mahmood Naderan-Tahan and Lieven Eeckhout, 
+"Cactus: Top-Down GPU-Compute Benchmarking using Real-Life Applications", 
+IEEE International Symposium on Workload Characterization (IISWC), 2021.
 ```
 
 This is a repository page of Cactus that contains scripts to fetch program sources, build them and run the workloads. As of version 1.0, Cactus contains the following applications and workloads:
@@ -39,7 +41,7 @@ Generally, Cactus workloads can be run on different platforms not limited to Nvi
 With respect to the default configurations mentioned earlier, if you have fresh Ubuntu 20.04.1 installation with RTX 3080 device, you can run the following three commands:
 
 ```
-git clone ...
+git clone https://github.com/gpubench/cactus
 ./setup
 ```
 
