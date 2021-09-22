@@ -42,7 +42,7 @@ With respect to the default configurations mentioned earlier, if you have fresh 
 
 ```
 git clone https://github.com/gpubench/cactus
-./setup
+./setup.sh
 ```
 
 Otherwise, for a custom configuration, open `./scripts/common` in a text editor prior to running `./setup` and review the following variables:
@@ -52,11 +52,11 @@ Otherwise, for a custom configuration, open `./scripts/common` in a text editor 
 * `INSTALL_CUDA`: Set it to `YES` if you want the setup to automatically install CUDA-11.2 with driver v460.27. The installation procedure is 1) blacklist the nouveau driver, 2) update initramfs, 3) reboot and 4) execute cuda .run file with `--driver and --toolkit` switches. If you have a working CUDA driver and toolkit, you may want to set this variablet to `NO`.
 * `INSTALL_CUDNN`: Set it to `YES` if you want the setup to automatically install CuDNN-8.1.0 for Pytorch workloads. If you have a working CuDNN, you may set this variable to `NO`.
 
-Generally, `setup` file runs the scripts in `./scripts` folder where each of them download and build a program. If all things go well, setup will report that and exit normally. Cactus scripts use standard installation procedures described in the program documentations. Therefore, if case of a compilation error, it is recommended first to check the documets of that program.
+Generally, `setup.sh` file runs the scripts in `./scripts` folder where each of them download and build a program. If all things go well, setup will report that and exit normally. Cactus scripts use standard installation procedures described in the program documentations. Therefore, if case of a compilation error, it is recommended first to check the documets of that program.
 
 # Running workloads
 
-Upon a successfull installation, navigate to `./workloads/` and you see 10 workloads. Inside each folder, there is a `runme` file. Just execute that with `./runme` command and it will automatically fetch the necessary infput files and run the workload.
+Upon a successfull installation, navigate to `./workloads/` and you see 10 workloads. Inside each folder, execute `./runme.sh` command and it will automatically fetch the necessary infput files and run the workload.
 
 # Reporting problems
 
