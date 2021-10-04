@@ -1,3 +1,5 @@
+<img align="left" width="250" height="250" src="https://user-images.githubusercontent.com/11626212/135849857-22a3e029-ff13-4d93-9556-9acb3335541e.jpg">
+
 # Cactus: Benchmarking GPGPU with Real Applications
 
 Existing GPGPU benchmark suites used by academics have a bottom-up approach by focusing on essential computational kernels and algorithm implementations. Cactus, on the other hand, focuses on a top-down approach by using modern GPGPU applications in HPC domain where multiple kernels and algorithms are used in order to run an application. More information about the philosophy of Cactus and its methodology is described in the following paper:
