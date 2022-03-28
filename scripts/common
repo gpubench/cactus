@@ -4,7 +4,7 @@
 export CACTUS_HOME=$HOME/cactus
 export ARCH=86            # Use deviceQuery to get that number 8.6 -> 86
 export INSTALL_CUDA=YES   # CUDA 11.2 with driver 460.27   # YES or NO
-export INSTALL_CUDNN=YES  # CuDNN 8.1.0                    # YES or NO
+export INSTALL_CUDNN=YES  # CuDNN 8.1.0                    # YES or NO   # For custom CuDNN path, set CUDNN_ROOT
 
 # Please do not edit the following variables
 export GMX_HOME=$CACTUS_HOME/sources/gromacs
