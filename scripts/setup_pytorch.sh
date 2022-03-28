@@ -50,7 +50,7 @@ else
     fi
     mv pytorch pt.1.7.1
     cd pt.1.7.1
-    python3 setup.py install --user
+    TORCH_CUDA_ARCH_LIST="$ARCH" python3 setup.py install --user
     if [ $? -eq 1 ]; then
         echo "[CACTUS] Problem installing Pytorch."
         exit 1
@@ -75,7 +75,7 @@ else
     fi
     mv torchtext tt.0.8.1  
     cd tt.0.8.1 
-    python3 setup.py install --user
+    TORCH_CUDA_ARCH_LIST="$ARCH" python3 setup.py install --user
     if [ $? -eq 1 ]; then
         echo "[CACTUS] Problem installing Text."
         exit 1
@@ -102,7 +102,7 @@ else
     fi
     mv vision v.0.9  
     cd v.0.9 
-    python3 setup.py install --user
+    TORCH_CUDA_ARCH_LIST="$ARCH" python3 setup.py install --user
     if [ $? -eq 1 ]; then
         echo "[CACTUS] Problem installing Vision."
         exit 1
