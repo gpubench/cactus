@@ -67,3 +67,7 @@ Since the main target of Cactus is academia and GPU simulators, the future work 
 
 * Create and release RTX 3080 traces compatible with [Accel-Sim](https://accel-sim.github.io/).
 * Test and expand the hardware platforms beyond Nvidia devices.
+
+# UPDATE: March 2024
+
+[Sieve](https://github.com/gpubench/sieve) methodology is used to identify representative kernels and after that, it is possible to create traces for those kernels. Some traces are available [here](https://github.com/gpubench/sieve/tree/main/traces).
