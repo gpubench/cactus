@@ -10,6 +10,8 @@ Mahmood Naderan-Tahan and Lieven Eeckhout,
 IEEE International Symposium on Workload Characterization (IISWC), 2021.
 ```
 
+You can watch [short](https://www.youtube.com/watch?v=VGgyG9HnV5k) and [full](https://www.youtube.com/watch?v=QiTo-UqHn9s) presentations at IISWC 2021.
+
 This is a repository of Cactus that contains scripts to fetch program sources, build them and run the workloads. As of version 1.0, Cactus contains the following applications and workloads:
 
 1) Molecular simulations: [Gromacs](http://www.gromacs.org/) (GMS) and [LAMMPS](https://www.lammps.org/) with two inputs, Rhodo and Colloid (LMR and LMC)
